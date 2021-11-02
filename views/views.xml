@@ -53,6 +53,7 @@
 
     <menuitem id="test_training_child"
       name="second" sequence="1"
+      web_icon="training,static/src/images/tst2.png"
       action="training.action_test_child"
       />
 

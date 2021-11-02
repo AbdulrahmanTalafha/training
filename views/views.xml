@@ -47,7 +47,7 @@
 
     <menuitem id="test_training_root"
       web_icon="training,static/src/images/tst1.png"
-      name="First" sequence="20"
+      name="First" sequence="1"
       action="training.action_test_child"
       />
 

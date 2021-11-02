@@ -17,48 +17,7 @@
       </field>
     </record>
 
-
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="test_module.action_window">
-      <field name="name">Test_module window</field>
-      <field name="res_model">test_module.test_module</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="test_module.action_server">
-      <field name="name">Test_module server</field>
-      <field name="model_id" ref="model_test_module_test_module"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="Test_module" id="test_module.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="test_module.menu_1" parent="test_module.menu_root"/>
-    <menuitem name="Menu 2" id="test_module.menu_2" parent="test_module.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="test_module.menu_1_list" parent="test_module.menu_1"
-              action="test_module.action_window"/>
-    <menuitem name="Server to list" id="test_module" parent="test_module.menu_2"
-              action="test_module.action_server"/>
--->
+    
 <record id="action_test_root" model="ir.actions.act_window">
     <field name="name">Training</field>
     <field name="res_model">training</field>
@@ -73,11 +32,12 @@
     <menuitem id="test_training_root"
       web_icon="training,static/src/images/tst1.png"
       name="First" sequence="20"
-      action="training.action_test_root"/>
+      />
 
     <menuitem id="test_training_child"
       name="second" sequence="1"
       parent="test_training_root"
+      action="training.action_test_root"
       />
   </data>
 </odoo>

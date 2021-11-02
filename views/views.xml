@@ -14,8 +14,8 @@
         </record>
 
         <menuitem id="test_training_module"
-                web_icon="training,static/src/images/tst.png"
-                name="Custody" sequence="20"
+                web_icon="training,static/src/images/tst1.jpg"
+                name="Training" sequence="20"
                 action="training.action_test_module"/>
     <!-- explicit list view definition -->
 <!--

@@ -5,17 +5,49 @@
   
     <!-- explicit list view definition -->
 
-    <record id="test_tree_view" model="ir.ui.view">
-      <field name="name">training.tree</field>
-      <field name="model">training</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="age"/>
-          <field name="gender"/>
-        </tree>
-      </field>
-    </record>
+<record id="test_tree_view" model="ir.ui.view">
+  <field name="name">training.tree</field>
+  <field name="model">training</field>
+  <field name="arch" type="xml">
+    <tree>
+      <field name="name"/>
+      <field name="age"/>
+      <field name="gender"/>
+    </tree>
+  </field>
+</record>
+
+<record id="test_for_view" model="ir.ui.view">
+  <field name="name">training.form></field>
+  <field name="model">training</field>
+  <field name="arch" type="xml">
+    <form string="Tester">
+      <sheet>
+        <field name="image" widget="image" class="oe_avatar"/>
+          <div class="oe_avatar">
+            <h1>
+              <field name="name" />
+            </h1>
+          </div>
+          <group>
+              <group>
+                <field name="gender"/>
+              </group>
+              <group>
+                <field name="age"/>
+              </group>
+          </group>
+      </sheet>
+      <div class="oe_chatter">
+        <field name="message_follower_ids" widget="mail_followers"/>
+        <field name="activity_ids" widget="mail_activity"/>
+        <field name="message_ids" widget="mail_threads" option='{"thread_level" : 1}'/>
+      </div>
+    </form>
+  </field>
+</record>      
+
+
 
     
 <record id="action_test_root" model="ir.actions.act_window">

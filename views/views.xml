@@ -2,21 +2,26 @@
   <data>
   
 
-                <record id="action_test_module" model="ir.actions.act_window">
-            <field name="name">Training</field>
-            <field name="res_model">training</field>
-            <field name="view_mode">tree,form</field>
-            <field name="help" type="html">
-                <p class="oe_view_nocontent_create">
-                    Click to Create a New Record.
-                </p>
-            </field>
-        </record>
+  <record id="action_test_root" model="ir.actions.act_window">
+    <field name="name">Training</field>
+    <field name="res_model">training</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to Create a New Record.
+      </p>
+    </field>
+    </record>
 
-        <menuitem id="test_training_module"
-                web_icon="training,static/src/images/tst1.png"
-                name="First" sequence="20"
-                action="training.action_test_module"/>
+    <menuitem id="test_training_root"
+      web_icon="training,static/src/images/tst1.png"
+      name="First" sequence="20"
+      action="training.action_test_module"/>
+
+    <menuitem id="test_training_child"
+      name="second" sequence="15"
+      parent="test_training_root"
+      action="action_test_root">
     <!-- explicit list view definition -->
 <!--
     <record model="ir.ui.view" id="test_module.list">

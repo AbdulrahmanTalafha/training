@@ -9,5 +9,5 @@ class training(models.Model):
         ('female', 'Female'),
         ('other' ,'Other'),
     ], string ="Gender", default="male")
-    image = field.Binary(string="image")
+    image = fields.Binary(string="image")
 

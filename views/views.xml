@@ -5,7 +5,7 @@
                 name="Custody" sequence="20"
                 action="action_test_module"/>
 
-                <record id="action_hr_custody" model="ir.actions.act_window">
+                <record id="action_test_module" model="ir.actions.act_window">
             <field name="name">Training</field>
             <field name="res_model">training</field>
             <field name="view_mode">tree,form</field>

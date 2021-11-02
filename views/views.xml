@@ -48,12 +48,12 @@
     <menuitem id="test_training_root"
       web_icon="training,static/src/images/tst1.png"
       name="First" sequence="1"
-      action="training.action_test_child"
+      action="training.action_test_root"
       />
 
     <menuitem id="test_training_child"
       name="second" sequence="2"
-      web_icon="training,static/src/images/tst2.png"
+      parent="test_training_root"
       action="training.action_test_child"
       />
 

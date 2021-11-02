@@ -21,7 +21,7 @@
     <menuitem id="test_training_child"
       name="second" sequence="15"
       parent="test_training_root"
-      action="action_test_root">
+      action="action_test_root"/>
     <!-- explicit list view definition -->
 <!--
     <record model="ir.ui.view" id="test_module.list">

@@ -39,5 +39,11 @@
       parent="test_training_root"
       action="training.action_test_root"
       />
+
+      <menuitem id="third_training_child"
+      name="Third" sequence="1"
+      parent="test_training_child"
+      action="training.action_test_root"
+      />
   </data>
 </odoo>

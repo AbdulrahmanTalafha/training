@@ -76,7 +76,7 @@
       action="training.action_test_root"/>
 
     <menuitem id="test_training_child"
-      name="second" sequence="15"
+      name="second" sequence="1"
       parent="test_training_root"
       />
   </data>

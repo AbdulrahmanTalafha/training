@@ -32,7 +32,6 @@
       </p>
     </field>
     </record>
-
     <record id="action_test_child" model="ir.actions.act_window">
     <field name="name">Training</field>
     <field name="res_model">training</field>
@@ -44,6 +43,8 @@
     </field>
     </record>
 
+    
+
     <menuitem id="test_training_root"
       web_icon="training,static/src/images/tst1.png"
       name="First" sequence="20"
@@ -52,7 +53,6 @@
 
     <menuitem id="test_training_child"
       name="second" sequence="1"
-      parent="test_training_root"
       action="training.action_test_child"
       />
 

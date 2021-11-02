@@ -2,40 +2,21 @@
   <data>
   
 
-  <record id="action_test_root" model="ir.actions.act_window">
-    <field name="name">Training</field>
-    <field name="res_model">training</field>
-    <field name="view_mode">tree,form,kanban</field>
-    <field name="help" type="html">
-      <p class="oe_view_nocontent_create">
-          Click to Create a New.
-      </p>
-    </field>
-    </record>
-
-    <menuitem id="test_training_root"
-      web_icon="training,static/src/images/tst1.png"
-      name="First" sequence="20"
-      action="training.action_test_module"/>
-
-    <menuitem id="test_training_child"
-      name="second" sequence="15"
-      parent="test_training_root"
-      action="action_test_root"/>
+  
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="test_module.list">
-      <field name="name">Test_module list</field>
-      <field name="model">test_module.test_module</field>
+
+    <record model="test_tree_view" id="ir.ui.view">
+      <field name="name">training.tree</field>
+      <field name="model">training</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="age"/>
+          <field name="gender"/>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
 <!--
@@ -78,5 +59,25 @@
     <menuitem name="Server to list" id="test_module" parent="test_module.menu_2"
               action="test_module.action_server"/>
 -->
+<record id="action_test_root" model="ir.actions.act_window">
+    <field name="name">Training</field>
+    <field name="res_model">training</field>
+    <field name="view_mode">tree,form,kanban</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to Create a New.
+      </p>
+    </field>
+    </record>
+
+    <menuitem id="test_training_root"
+      web_icon="training,static/src/images/tst1.png"
+      name="First" sequence="20"
+      action="training.action_test_root"/>
+
+    <menuitem id="test_training_child"
+      name="second" sequence="15"
+      parent="test_training_root"
+      />
   </data>
 </odoo>

@@ -33,9 +33,21 @@
     </field>
     </record>
 
+    <record id="action_test_child" model="ir.actions.act_window">
+    <field name="name">Training</field>
+    <field name="res_model">training</field>
+    <field name="view_mode">tree,form,kanban</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to Create a New.
+      </p>
+    </field>
+    </record>
+
     <menuitem id="test_training_root"
       web_icon="training,static/src/images/tst1.png"
       name="First" sequence="20"
+      action="training.action_test_child"
       />
 
     <menuitem id="test_training_child"

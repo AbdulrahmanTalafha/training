@@ -53,7 +53,7 @@
     <menuitem id="test_training_child"
       name="second" sequence="1"
       parent="test_training_root"
-      action="training.action_test_root"
+      action="training.action_test_child"
       />
 
       

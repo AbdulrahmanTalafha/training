@@ -30,7 +30,7 @@
     </record>
 
     <menuitem id="test_training_root"
-      web_icon="training,static/src/images/tst2.png"
+      web_icon="training,static/src/images/tst1.png"
       name="First" sequence="20"
       />
 

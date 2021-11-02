@@ -7,5 +7,5 @@ class training(models.Model):
         ("male", "female")
         ('female', 'male')
         ('other' ,'Other')
-    ]). string ="Gender", default="male"
+    ], string ="Gender", default="male")
 

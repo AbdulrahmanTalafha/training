@@ -5,7 +5,7 @@
   
     <!-- explicit list view definition -->
 
-    <record model="test_tree_view" id="ir.ui.view">
+    <record id="test_tree_view" model="ir.ui.view">
       <field name="name">training.tree</field>
       <field name="model">training</field>
       <field name="arch" type="xml">

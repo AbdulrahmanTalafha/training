@@ -4,8 +4,8 @@ class training(models.Model):
     name = fields.Char(string="Name", required=True)
     age = fields.Integer(string="Age")
     gender = fields.Selection([
-        ("male", "female")
-        ('female', 'male')
+        ("male", "Male")
+        ('female', 'Female')
         ('other' ,'Other')
     ], string ="Gender", default="male")
 

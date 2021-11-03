@@ -65,7 +65,7 @@
     </record>
   
     <menuitem id="test_training_root"
-      web_icon="test,static/src/images/tst1.png"
+      web_icon="training,static/src/images/tst1.png"
       name="First" sequence="1"
       
       />
@@ -73,7 +73,7 @@
     <menuitem id="test_training_child"
       name="second" sequence="2"
       parent="test_training_root"
-      action="test.action_test_root"
+      action="training.action_test_root"
       />
 
       

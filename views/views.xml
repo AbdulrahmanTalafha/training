@@ -32,7 +32,7 @@
           <group>
              <field name="gender"/>
           </group>
-          <grou>
+          <group>
              <field name="age"/>
           </group>
       </sheet>

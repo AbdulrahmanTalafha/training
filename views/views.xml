@@ -16,7 +16,7 @@
     </tree>
   </field>
 </record>
-
+<!--
 <record id ="test_form_view" model="ir.ui.view">
 <field name="name">training.test.form</field>
 <field name="model">training</field>
@@ -44,7 +44,7 @@
    </form>
 </field>
 </record>
-
+-->
 
 
 

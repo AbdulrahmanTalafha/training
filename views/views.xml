@@ -1,0 +1,81 @@
+<odoo>
+  <data>
+  
+
+  
+    <!-- explicit list view definition -->
+
+<record id="test_tree_view" model="ir.ui.view">
+  <field name="name">training.tree</field>
+  <field name="model">training</field>
+  <field name="arch" type="xml">
+    <tree>
+      <field name="name"/>
+      <field name="age"/>
+      <field name="gender"/>
+    </tree>
+  </field>
+</record>
+
+<record id ="test_form_view" model="ir.ui.view">
+<field name="name">training.form</field>
+<field name="model">training</field>
+<field name="arch" type="xml">
+   <form>
+      <sheet>
+          <field name="image" widget="image" class="oe_avatar"/>
+          <widget name="web_ribbon" text="Male" bg_color="bg-danger" attrs="{'invisible': [('gender', '=', 'female')]}"/>
+          <widget name="web_ribbon" text="Female" bg_color="bg-danger" attrs="{'invisible': [('gender', '=','male')]}"/>
+
+          <div class="oe_title">
+             <h1>
+                <field name="name"/>
+             </h1>
+          </div>
+          <group>
+             <field name="gender"/>
+          </group>
+          <group>
+             <field name="age"/>
+          </group>
+      </sheet>
+      <div>
+         <field name="message_follower_ids" widget="mail_followers"/>
+         <field name="activity_ids" widget="mail_activity"/>
+         <field name="message_ids" widget="mail_thread" option='{"thread_level": 1}'/>
+      </div>
+   </form>
+</field>
+</record>
+
+
+
+
+
+    
+<record id="action_test_root" model="ir.actions.act_window">
+    <field name="name">Training</field>
+    <field name="res_model">training</field>
+    <field name="view_mode">tree,form,kanban</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to Create a New.
+      </p>
+    </field>
+    </record>
+  
+    <menuitem id="test_training_root"
+      web_icon="test,static/src/images/tst1.png"
+      name="First" sequence="1"
+      
+      />
+
+    <menuitem id="test_training_child"
+      name="second" sequence="2"
+      parent="test_training_root"
+      action="test.action_test_root"
+      />
+
+      
+  </data>
+</odoo>

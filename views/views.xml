@@ -17,6 +17,34 @@
   </field>
 </record>
 
+<record id ="test_form_view" model="ir.ui.view">
+<field name="name">training.test.form</field>
+<field name="model">training</field>
+<field name="arch" type="xml">
+   <form>
+      <sheet>
+          <field name="image" widget="image" class="oe_avatar"/>
+          <div class="oe_title">
+             <h1>
+                <field name="name"/>
+             </h1>
+          </div>
+          <group>
+             <field name="gender"/>
+          </group>
+          <grou>
+             <field name="age"/>
+          </group>
+      </sheet>
+      <div>
+         <field name="message_follower_ids" widget="mail_followers"/>
+         <field name="activity_ids" widget="mail_activity"/>
+         <field name="message_ids" widget="mail_thread" option='{"thread_level": 1}'/>
+      </div>
+   </form>
+</field>
+</record>
+
 
 
 

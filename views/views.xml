@@ -26,7 +26,6 @@
           <field name="image" widget="image" class="oe_avatar"/>
           <widget name="web_ribbon" text="Male" bg_color="bg-danger" attrs="{'invisible': [('gender', '=', 'female')]}"/>
           <widget name="web_ribbon" text="Female" bg_color="bg-danger" attrs="{'invisible': [('gender', '=','male')]}"/>
-          <widget name="web_ribbon" text="Guy" bg_color="bg-danger" attrs="{'invisible': [('gender', '=','other')]}"/>
 
           <div class="oe_title">
              <h1>

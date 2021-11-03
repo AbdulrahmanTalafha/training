@@ -24,8 +24,8 @@
    <form>
       <sheet>
           <field name="image" widget="image" class="oe_avatar"/>
-          <widget name="web_ribbon" text="Male" bg_color="bg-danger" attrs="{'visible': [('gender', '=', 'female')]}"/>
-          <widget name="web_ribbon" text="Female" bg_color="bg-danger" attrs="{'visible': [('gender', '=','male')]}"/>
+          <widget name="web_ribbon" text="Male" bg_color="bg-danger" attrs="{'invisible': [('gender', '=', 'female')]}"/>
+          <widget name="web_ribbon" text="Female" bg_color="bg-danger" attrs="{'invisible': [('gender', '=','male')]}"/>
 
           <div class="oe_title">
              <h1>

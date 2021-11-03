@@ -2,7 +2,7 @@ from odoo import models, fields, api,exceptions
 class training(models.Model):
     _name = 'training'
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _description = "Test_Table"
+    
     name = fields.Char(string="Name", required=True)
     age = fields.Integer(string="Age")
     gender = fields.Selection([

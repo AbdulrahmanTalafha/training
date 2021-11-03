@@ -18,8 +18,8 @@
 </record>
 
 <record id ="test_form_view" model="ir.ui.view">
-<widget name="web_ribbon" text="Male" bg_color="red" attrs="{'invisible': [('gender', '=', 'female')]}"/>
-<widget name="web_ribbon" text="Female" bg_color="red" attrs="{'invisible': [('gender', '=','male')]}"/>
+<widget name="web_ribbon" text="Male" bg_color="red" attrs="{'invisible': ('gender', '=', 'female')}"/>
+<widget name="web_ribbon" text="Female" bg_color="red" attrs="{'invisible': ('gender', '=','male')}"/>
 <field name="name">training.form</field>
 <field name="model">training</field>
 <field name="arch" type="xml">

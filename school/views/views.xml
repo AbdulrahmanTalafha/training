@@ -66,12 +66,12 @@
   
     <menuitem id="test_school_root"
       web_icon="school,static/src/images/tst1.png"
-      name="First" sequence="1"
+      name="Second" sequence="1"
       
       />
 
     <menuitem id="test_school_child"
-      name="second" sequence="2"
+      name="Third" sequence="2"
       parent="test_school_root"
       action="school.school_test_root"
       />

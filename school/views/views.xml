@@ -1,38 +1,23 @@
 <odoo>
   <data>
-  
 
-  
-    <!-- explicit list view definition -->
-
-    <record id="school_tree" model="ir.ui.view">
-      <field name="name">school.tree</field>
-      <field name="model">school</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="age"/>
-          <field name="gender"/>
-        </tree>
-      </field>
-    </record>
-
-    
-<record id="action_school_root" model="ir.actions.act_window">
-    <field name="name">School</field>
-    <field name="res_model">school</field>
-    <field name="view_mode">tree,form,kanban</field>
-    <field name="help" type="html">
-      <p class="oe_view_nocontent_create">
-          Click to Create a New.
+  <record name = "action_school" model = "ir.actions.act_window">
+    <field name = "name">School</field>
+    <field name = "res_model">school</field>
+    <field name = "view_mode">tree,form,kanban</field>
+    <field name = "name">School</field>
+    <field name = "help" type = "html">
+      <p>
+        Click to Create new record.
       </p>
     </field>
-    </record>
+  </record>
 
-    <menuitem id="test_school_root"
-      web_icon="school,static/src/images/tst2.png"
-      name="First" sequence="20"
-      action="action_school_root"
-      />  
+  <menuitem id='school_module_root'
+    web_icon = "school,static/src/images/tst2.png"
+    name = "Second" sequence = "2"
+    action = "school.action_school"
+  />
+
   </data>
 </odoo>

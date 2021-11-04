@@ -54,7 +54,7 @@
 
     
 <record id="school_test_root" model="ir.actions.act_window">
-    <field name="name">school</field>
+    <field name="name">School</field>
     <field name="res_model">school</field>
     <field name="view_mode">tree,form,kanban</field>
     <field name="help" type="html">

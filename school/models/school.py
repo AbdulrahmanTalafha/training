@@ -1,5 +1,14 @@
 from odoo import models, fields, api,exceptions
-class school(models.Model):
+class training(models.Model):
     _name = 'school'
-    name = fields.Char()
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    
+    name = fields.Char(string="Name", required=True)
+    age = fields.Integer(string="Age")
+    gender = fields.Selection([
+        ("male", "Male"),
+        ('female', 'Female'),
+        ('other' ,'Other'),
+    ], string ="Gender", default="male")
+    image = fields.Binary(string="image")
 

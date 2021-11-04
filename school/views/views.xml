@@ -5,7 +5,6 @@
     <field name = "name">School</field>
     <field name = "res_model">school</field>
     <field name = "view_mode">tree,form,kanban</field>
-    <field name = "name">School</field>
     <field name = "help" type = "html">
       <p>
         Click to Create new record.

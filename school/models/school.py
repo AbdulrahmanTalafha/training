@@ -4,6 +4,7 @@ from odoo import models,fields,api,exception
 class school(models.Model):
     _name = 'school'
     _inherit = ['mail.thread', 'mail.activity.mixin']
+    _description = 'School'
 
     name = fields.Char(string='Name', Required=True)
     age = fields.Integer(string='Age')

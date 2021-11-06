@@ -1,5 +1,5 @@
 from odoo import models, fields, api,exceptions
-class training(models.Model):
+class trainingg(models.Model):
     _name = 'training'
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Training'

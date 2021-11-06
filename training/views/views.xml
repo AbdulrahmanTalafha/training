@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
+  
   
 
   
@@ -78,7 +78,7 @@
   
     <menuitem id="test_training_root"
       web_icon="training,static/src/images/tst1.png"
-      name="First" sequence="1"
+      name="T_Module" sequence="1"
       
       />
 
@@ -89,5 +89,5 @@
       />
 
       
-  </data>
+  
 </odoo>

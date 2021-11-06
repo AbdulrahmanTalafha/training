@@ -5,7 +5,7 @@ class training(models.Model):
     _description = 'Training'
     
     name = fields.Char(string = "Name", required = True)
-    age = fields.Integer(string = "Age")
+    age = NULL
     gender = fields.Selection([
         ("male", "Male"),
         ('female', 'Female'),

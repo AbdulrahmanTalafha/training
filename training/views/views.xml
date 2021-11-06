@@ -11,7 +11,7 @@
   <field name="arch" type="xml">
     <tree>
       <field name="name"/>
-      <field name="agee"/>
+      <field name="age"/>
       <field name="gender"/>
     </tree>
   </field>
@@ -36,7 +36,7 @@
              <field name="gender"/>
           </group>
           <group>
-             <field name="agee"/>
+             <field name="age"/>
           </group>
       </sheet>
       <div>

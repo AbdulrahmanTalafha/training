@@ -5,12 +5,12 @@ class training(models.Model):
     _description = 'Training'
     
     name = fields.Char(string = "Name", required = True)
-    age = fields.Integer(string="Age" , required = True)
+    age = fields.Integer(string = "Age")
     gender = fields.Selection([
         ("male", "Male"),
         ('female', 'Female'),
         ('other' ,'Other'),
-    ], string ="Gender", default = "male")
+    ], string = "Gender", default = "male")
     image = fields.Binary(string = "image")
     active = fields.Boolean(string='Active',default=True)
 

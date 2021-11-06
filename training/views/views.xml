@@ -77,8 +77,9 @@
     </record>
   
     <menuitem id="test_training_root"
+      name="T_Module" 
       web_icon="training,static/src/images/tst1.png"
-      name="T_Module" sequence="1"
+      sequence="1"
       
       />
 

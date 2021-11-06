@@ -34,13 +34,14 @@
              </h1>
           </div>
           <group>
-             <field name="gender"/>
-          </group>
-          <group>
-             <field name="age"/>
-             <field name="date_from" widget="daterange" option="{'related_end_date': 'date_to'}"/>
-             <field name="date_to" widget="daterange" option="{'related_start_date': 'date_from'}"/>
-
+            <group>
+               <field name="gender"/>
+            </group>
+            <group>
+               <field name="age"/>
+               <field name="date_from"/>
+               <field name="date_to"/>
+            </group>
           </group>
           <notebook>
             <page>

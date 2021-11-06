@@ -10,7 +10,7 @@
   <field name="name">training.tree</field>
   <field name="model">training</field>
   <field name="arch" type="xml">
-    <tree>
+    <tree string="Training">
       <field name="name"/>
       <field name="age" optional="show"/>
       <field name="gender" optional="show"/>

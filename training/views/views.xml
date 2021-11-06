@@ -59,6 +59,7 @@
       <filter string="Female" name="female" domain="[('gender', '=', 'female')]"/>
       <searchpanel>
         <field name="gender" icon="fa-users"/>
+        <field name="age" icon="fa-users"
       </searchpanel>
     </search>
   </field>

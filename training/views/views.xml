@@ -13,7 +13,7 @@
     <tree string="Training">
       <field name="name"/>
       <field name="age" optional="show"/>
-      <field name="gender" optional="show"/>
+      <field name="gender" optional="hide"/>
     </tree>
   </field>
 </record>
@@ -39,6 +39,12 @@
           <group>
              <field name="age"/>
           </group>
+          <notebook>
+            <page>
+              <field name="video_url"/>
+              <field name="embed_code" class="mt-2" widget="video_preview"/>
+            </page>
+          </notebook>
       </sheet>
       <div>
          <field name="message_follower_ids" widget="mail_followers"/>

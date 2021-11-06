@@ -48,11 +48,22 @@
 </field>
 </record>
 
+<record id="training_search_view" model="ir.ui.view">
+  <field name = "name">training.search</field>
+  <field name = "res_model">training</field>
+  <field name = "arch" type="xml">
+    <search>
+      <field name="name" filter_domain="[('name', 'ilike', 'self')]" string="Name"/>
+      <separator/>
+      <filter string="Male" name="male" domain="[('gender', '=', 'male')]"/>
+      <filter string="Female" name="female" domain="[('gender', '=', 'female')]"/>
+      <searchpanel>
+        <field name="gender" icon="fa-users"/>
+      </searchpanel>
+    </search>
+  </field>
+</record>
 
-
-
-
-    
 <record id="action_test_root" model="ir.actions.act_window">
     <field name="name">Training</field>
     <field name="res_model">training</field>

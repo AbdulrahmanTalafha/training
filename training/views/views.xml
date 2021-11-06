@@ -50,7 +50,7 @@
 
 <record id="training_search_view" model="ir.ui.view">
   <field name = "name">training.search</field>
-  <field name = "res_model">training</field>
+  <field name = "model">training</field>
   <field name = "arch" type="xml">
     <search>
       <field name="name" filter_domain="[('name', 'ilike', 'self')]" string="Name"/>

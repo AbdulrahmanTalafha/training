@@ -12,4 +12,5 @@ class training(models.Model):
         ('other' ,'Other'),
     ], string ="Gender", default = "male")
     image = fields.Binary(string = "image")
+    active = fields.Boolean(string='Active',default=True)
 

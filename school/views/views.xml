@@ -2,7 +2,7 @@
   <data>
 
   <record id="school_tree_view" model="ir.ui.view">
-    <field name="name"/>school.tree</field>
+    <field name="name">school.tree</field>
     <field name="res_model">school</field>
     <field name="arch" type="xml">
       <tree>

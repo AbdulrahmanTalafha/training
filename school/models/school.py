@@ -1,4 +1,4 @@
-from typing_extensions import Required
+
 from odoo import models,fields,api,exception
 
 class school(models.Model):

@@ -3,7 +3,7 @@
 
   <record id="school_tree_view" model="ir.ui.view">
     <field name="name">school.tree</field>
-    <field name="res_model">school</field>
+    <field name="model">school</field>
     <field name="arch" type="xml">
       <tree>
         <field name="namee"/>
@@ -16,7 +16,7 @@
 
   <record id="school_form_view" model="ir.ui.view">
     <field name="name">school.form</field>
-    <field name="res_model">school</field>
+    <field name="model">school</field>
     <field name="arch" type="xml">
       <form>
         <sheet>

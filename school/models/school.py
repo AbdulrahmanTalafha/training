@@ -5,9 +5,9 @@ class school(models.Model):
     _name = 'school'
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    namee = fields.Char(string='Name')
-    agee = fields.Integer(string='Age')
-    genderr = fields.Selection([
+    name = fields.Char(string='Name')
+    age = fields.Integer(string='Age')
+    gender = fields.Selection([
         ('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),

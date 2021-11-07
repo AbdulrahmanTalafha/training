@@ -8,8 +8,8 @@ class school(models.Model):
     namee = fields.Char(string='Name')
     agee = fields.Integer(string='Age')
     genderr = fields.Selection([
-        ('male', 'Male')
-        ('female', 'Female')
-        ('other', 'Other')
+        ('male', 'Male'),
+        ('female', 'Female'),
+        ('other', 'Other'),
     ], string='Gender', default="Male")
     imagee = fields.Binary(string='Image')

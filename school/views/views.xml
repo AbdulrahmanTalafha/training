@@ -6,9 +6,9 @@
     <field name="model">school</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="namee"/>
-        <field name="agee"/>
-        <field name="genderr"/>
+        <field name="name"/>
+        <field name="age"/>
+        <field name="gender"/>
       </tree>
     </field>
   </record>
@@ -27,8 +27,8 @@
             <h1><field name = "namee"/></h1>
           </div>
           <div>
-            <group><field name="agee"/></group>
-            <group><field name="genderr"/></group>
+            <group><field name="age"/></group>
+            <group><field name="gender"/></group>
           </div>
         </sheet>
         <div>

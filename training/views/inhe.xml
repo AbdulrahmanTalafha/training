@@ -15,7 +15,7 @@
         
         </field>
     </record>
-    <record id="tinherit_form_view" model="ir.ui.view">
+    <record id="tinherist_form_view" model="ir.ui.view">
       <field name="name">school.inherit</field>
       <field name="model">school</field>
       <field name="inherit_id" ref="school.school_form_view"/>

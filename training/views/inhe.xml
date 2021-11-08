@@ -7,7 +7,7 @@
       <field name="model">training</field>
       <field name="inherit_id" ref="training.test_form_view"/>
       <field name="arch" type="xml">
-        <page name="videos_" position="before">
+        <page name="videos_" position="after">
          <page string="testInherit" name="training">
          <field name="video_url"/>
          </page>

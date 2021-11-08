@@ -7,11 +7,12 @@
       <field name="model">training</field>
       <field name="inherit_id" ref="training.test_form_view"/>
       <field name="arch" type="xml">
-        <notebook position="inside">
+        <page name"video_url" position="before">
          <page string="testInherit" name="training">
          <field name="video_url"/>
          </page>
-        </notebook>
+         </page>
+        
         </field>
     </record>
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+<data>
   
   
 
   
-    <!-- explicit list view definition -->
+    
 
 <record id="test_tree_view" model="ir.ui.view">
   <field name="name">training.tree</field>
@@ -100,5 +101,5 @@
       />
 
       
-  
+  <data>
 </odoo>

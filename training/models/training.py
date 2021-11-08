@@ -25,7 +25,7 @@ class training(models.Model):
         for rec in self:
             rec.embed_code = get_video_embed_code(rec.video_url)
     
-    @api.multi
+    @api.model
     def name_get(self):
         res = []
         for rec in self:

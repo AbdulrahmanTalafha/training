@@ -12,7 +12,7 @@
     </record>
 -->
 
-    <record id="_action" model="ir.actions.act_window">
+    <record id="tinh_action" model="ir.actions.act_window">
     <field name="name">tinherit.action</field>
     <field name="res_model">tinherit</field>
     <field name="view_mode">tree,form,kanban</field>
@@ -26,6 +26,7 @@
     <menuitem id="_action" 
     web_icon="Tinherit.static/src/images/tst2.png"
     name="tinherit_m" sequence="3"
+    action="tinh_action"
     />
 
   </data>

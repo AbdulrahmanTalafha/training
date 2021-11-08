@@ -2,7 +2,7 @@
 <odoo>
 <data>
   
-<record id="test_tree_view34" model="ir.ui.view">
+<record id="training.test_tree_view" model="ir.ui.view">
   <field name="name">training.tree</field>
   <field name="model">training</field>
   <field name="arch" type="xml">

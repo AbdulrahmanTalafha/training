@@ -65,7 +65,7 @@
   <field name = "model">training</field>
   <field name = "arch" type="xml">
     <search>
-      <field name="name" filter_domain="[('name', 'ilike', 'self')]" string="Name"/>
+      <field name="name"  string="Name"/>
       <separator/>
       <filter string="Male" name="male" domain="[('gender', '=', 'male')]"/>
       <filter string="Female" name="female" domain="[('gender', '=', 'female')]"/>

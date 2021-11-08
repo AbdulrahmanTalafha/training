@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_Tinherit_Tinherit_module,Tinherit_module.Tinherit_module,Tinherit,,1,1,1,1
+access_tinherit_tinherit_module,tinherit_module.tinherit_module,tinherit,,1,1,1,1

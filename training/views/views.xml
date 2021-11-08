@@ -41,10 +41,7 @@
                <field name="age"/>
                <field name="date_from"/>
                <field name="date_to"/>
-            </group>
-            <group>
-              <field name="name_get_uid"/>
-            </group>
+            </group>      
           </group>
           <notebook>
             <page name="videos_" string="فيديو">

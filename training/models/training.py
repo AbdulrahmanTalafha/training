@@ -39,10 +39,10 @@ class training(models.Model):
        # domain = args + ["|", ('name', operator, name)]
         #return super(training, self).search(domain, limit=limit).name_get()
     
-    @api.model
-    def _namesearch(self, name, args=None, operator = "ilike", limit=100, name_get_uid=None):
-        args=[]
-        domain=[]
-        if name:
-            domain=["|", ("name", operator, name)]
-        return self._search(domain + args, limit=limit, access_right_uid = name_get_uid)
+    #@api.model
+    #def _namesearch(self, name, args=None, operator = "ilike", limit=100, name_get_uid=None):
+     #   args=[]
+      #  domain=[]
+       # if name:
+        #    domain=["|", ("name", operator, name)]
+        #return self._search(domain + args, limit=limit, access_right_uid = name_get_uid)

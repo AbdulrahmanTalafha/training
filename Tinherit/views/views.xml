@@ -25,7 +25,8 @@
       
     <menuitem id="tinherit_menu" 
     web_icon="Tinherit.static/src/images/tst2.png"
-    name="tinherit_m" sequence="3">
+    name="tinherit_m" sequence="3"
+    action="tinherit.tinherit_action"/>
 
   </data>
 </odoo>

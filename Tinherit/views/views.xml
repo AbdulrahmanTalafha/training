@@ -24,7 +24,7 @@
     </record>
       
     <menuitem id="_action" 
-    web_icon="Tinherit.static/src/images/tst2.png"
+    web_icon="Tinherit,static/src/images/tst2.png"
     name="tinherit_m" sequence="3"
     action="tinh_action"
     />

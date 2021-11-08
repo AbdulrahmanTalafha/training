@@ -2,7 +2,7 @@
 <odoo>
 <data>
 
-    <record id="tinherit_form_view" model="ir.ui.view">
+    <!--<record id="tinherit_form_view" model="ir.ui.view">
       <field name="name">training.inherit</field>
       <field name="model">training</field>
       <field name="inherit_id" ref="training.test_form_view">
@@ -12,6 +12,6 @@
         </notebook>
         </field>
     </record>
-
+-->
 </data>
 </odoo>

@@ -25,16 +25,3 @@ class training(models.Model):
         for rec in self:
             rec.embed_code = get_video_embed_code(rec.video_url)
     
-    #@api.model
-    #def name_get(self):
-     #   res = []
-      #  for rec in self:
-       #     res.append((rec.id, '%s - %s' % (rec.name)))
-        #return res
-
-    #@api.model
-    #def _name_search(self, name='', args=None, operator='ilike', limit=100):
-     #   if args is None:
-      #      args = []
-       # domain = args + ["|", ('name', operator, name)]
-        #return super(training, self).search(domain, limit=limit).name_get()

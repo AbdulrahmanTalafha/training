@@ -2,19 +2,14 @@
 <odoo>
 <data>
   
-  
-
-  
-    
-
 <record id="test_tree_view" model="ir.ui.view">
   <field name="name">training.tree</field>
   <field name="model">training</field>
   <field name="arch" type="xml">
     <tree string="Training">
       <field name="name"/>
-      <field name="age" optional="show"/>
-      <field name="gender" optional="hide"/>
+      <field name="age" />
+      <field name="gender" />
     </tree>
   </field>
 </record>

@@ -2,7 +2,7 @@
 <data>
 
 <record id="sc_tinherit" model="ir.ui.view">
-<field name="name">training.sctinherit</field>
+<field name="name">training.inherit</field>
 <field name="model">training</field>
 <field name="inherit_id" ref="training.test_form_view"/>
       <field name="arch" type="xml">

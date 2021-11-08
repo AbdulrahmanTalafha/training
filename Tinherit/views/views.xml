@@ -1,6 +1,6 @@
 <odoo>
   <data>
-    
+    <!--
     <record id="inherit_form_view" model="ir.ui.view">
       <field name="name">training.inherit</field>
       <field name="model">training</field>
@@ -10,6 +10,22 @@
          </page>
         </notebook>
     </record>
+-->
+
+    <record id="tinherit_action" model="ir.actions.act_window">
+    <field name="name">tinherit.action</field>
+    <field name="res_model">tinherit</field>
+    <field name="view_mode">tree,form,kanban</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to Create a New.
+      </p>
+    </field>
+    </record>
+      
+    <menuitem id="tinherit_menu" 
+    web_icon="Tinherit.static/src/images/tst2.png"
+    name="tinherit_m" sequence="3">
 
   </data>
 </odoo>

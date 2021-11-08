@@ -44,7 +44,7 @@
             </group>
           </group>
           <notebook>
-            <page>
+            <page string="Video_URL">
               <field name="video_url"/>
               <field name="embed_code" class="mt-2" widget="video_preview"/>
             </page>

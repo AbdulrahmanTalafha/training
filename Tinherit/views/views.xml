@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    
+    <record id="inherit_view_form" model="ir.ui.view">
+      <field name="name">training.inherit</field>
+      <field name="name">training</field>
+      <field name="inherit_id" ref="training.test_form_view"/>
+        <notebook position="inside">
+         <page string="testInherit" name="testInherit">
+         </page>
+        </notebook>
+    </record>
+
+  </data>
+</odoo>

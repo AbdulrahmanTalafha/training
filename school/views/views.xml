@@ -30,6 +30,12 @@
             <group><field name="age"/></group>
             <group><field name="gender"/></group>
           </div>
+          <notebook>
+            <page name="videos_" string="فيديو">
+              <field name="video_url"/>
+              <field name="embed_code" class="mt-2" widget="video_preview"/>
+            </page>
+          </notebook>
         </sheet>
         <div>
          <field name="message_follower_ids" widget="mail_followers"/>

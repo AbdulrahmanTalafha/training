@@ -18,10 +18,10 @@
     <record id="tinherist_form_view" model="ir.ui.view">
       <field name="name">school.inherit</field>
       <field name="model">school</field>
-      <field name="inherit_id" ref="school.school_form_view"/>
+      <field name="inherit_id" ref="school.test_form_view"/>
       <field name="arch" type="xml">
         <page name="videos_" position="after">
-         <page string="testInherit" name="training">
+         <page string="tes1tInherit" name="school">
          <field name="video_url"/>
          </page>
          </page>

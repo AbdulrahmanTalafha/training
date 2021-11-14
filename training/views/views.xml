@@ -44,6 +44,13 @@
               <field name="video_url"/>
               <field name="embed_code" class="mt-2" widget="video_preview"/>
             </page>
+            <page>
+              <field name="pageadd">
+                <tree editable="bottom">
+                  
+                </tree>
+              <field/>
+            </page>
           </notebook>
       </sheet>
       <div>

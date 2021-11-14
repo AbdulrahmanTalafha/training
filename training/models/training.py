@@ -21,7 +21,9 @@ class training(models.Model):
     embed_code = fields.Char(compute="_compute_embed_code")
     name_t = fields.Char()
     number = fields.Integer()
-    pageadd = fields.One2many(string="Add lines")
+    pageadd = fields.One2many()
+    p_id = fields.Integer()
+    p_qty = fields.Integer()
 
     @api.depends('video_url')
     def _compute_embed_code(self):

@@ -50,6 +50,16 @@
                   <field name="name_t"/>
                   <field name="number"/>
                 </tree>
+                <form>
+                  <group>
+                    <group>
+                      <field name="p_id"/>
+                    </group>
+                    <group>
+                      <field name="p_qty"/>
+                    </group>
+                  </group>
+                </form>
               <field/>
             </page>
           </notebook>

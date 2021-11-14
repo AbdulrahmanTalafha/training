@@ -19,11 +19,7 @@ class training(models.Model):
     active = fields.Boolean(string='Active',default=True)
     video_url = fields.Char('Video URL', help="URL of a video for showcasing your student.")
     embed_code = fields.Char(compute="_compute_embed_code")
-    name_t = fields.Char()
-    number = fields.Integer()
-    pageadd = fields.One2many()
-    p_id = fields.Integer()
-    p_qty = fields.Integer()
+    
 
     @api.depends('video_url')
     def _compute_embed_code(self):

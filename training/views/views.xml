@@ -44,25 +44,44 @@
               <field name="video_url"/>
               <field name="embed_code" class="mt-2" widget="video_preview"/>
             </page>
-            <page string="tree_add">
-              <field name="pageadd">
-                <tree editable="bottom">
-                  <field name="name_t"/>
-                  <field name="number"/>
-                </tree>
-                <form>
-                  <group>
-                    <group>
-                      <field name="p_id"/>
-                    </group>
-                    <group>
-                      <field name="p_qty"/>
-                    </group>
-                  </group>
-                </form>
-              <field/>
-            </page>
           </notebook>
+      </sheet>
+      <div>
+         <field name="message_follower_ids" widget="mail_followers"/>
+         <field name="activity_ids" widget="mail_activity"/>
+         <field name="message_ids" widget="mail_thread" option='{"thread_level": 1}'/>
+      </div>
+   </form>
+</field>
+</record>
+
+<record id ="test_form_view" model="ir.ui.view">
+<field name="name">training.form</field>
+<field name="model">training</field>
+<field name="priority" eval="2"/>
+<field name="arch" type="xml">
+   <form>
+      <sheet>
+          <field name="image" widget="image" class="oe_avatar"/>
+          <widget name="web_ribbon" text="Male" bg_color="bg-danger" attrs="{'invisible': [('gender', '=', 'female')]}"/>
+          <widget name="web_ribbon" text="Female" bg_color="bg-danger" attrs="{'invisible': [('gender', '=','male')]}"/>
+
+          <div class="oe_title">
+             <h1>
+                <field name="name"/>
+             </h1>
+          </div>
+          <group>
+            <group>
+               <field name="gender"/>
+            </group>
+            <group>
+               <field name="age"/>
+               <field name="date_from"/>
+               <field name="date_to"/>
+            </group>      
+          </group>
+          
       </sheet>
       <div>
          <field name="message_follower_ids" widget="mail_followers"/>

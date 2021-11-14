@@ -44,10 +44,11 @@
               <field name="video_url"/>
               <field name="embed_code" class="mt-2" widget="video_preview"/>
             </page>
-            <page>
+            <page string="tree_add">
               <field name="pageadd">
                 <tree editable="bottom">
-                  
+                  <field name="name_t"/>
+                  <field name="number"/>
                 </tree>
               <field/>
             </page>

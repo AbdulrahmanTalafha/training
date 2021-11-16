@@ -85,6 +85,17 @@
       </p>
     </field>
     </record>
+
+    <record id="action_test_child" model="ir.actions.act_window">
+    <field name="name">Training</field>
+    <field name="res_model">training</field>
+    <field name="view_mode">tree,form,kanban</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to Create a New.
+      </p>
+    </field>
+    </record>
   
     <menuitem id="test_training_root"
       name="T_Module" 
@@ -93,9 +104,14 @@
       />
 
     <menuitem id="test_training_child"
-      name="second"
+      name="School"
       parent = "test_training_root"
       action="school.school_action"
+      />
+      <menuitem id="test_training_child2"
+      name="Sub_School"
+      parent = "test_training_child"
+      action="training.action_test_child"
       />
 
       

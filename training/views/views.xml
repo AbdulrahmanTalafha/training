@@ -87,7 +87,7 @@
     </record>
 
     <record id="action_test_child" model="ir.actions.act_window">
-    <field name="name">Training</field>
+    <field name="name">Training.action</field>
     <field name="res_model">training</field>
     <field name="view_mode">tree,form,kanban</field>
     <field name="help" type="html">

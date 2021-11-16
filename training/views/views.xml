@@ -55,42 +55,7 @@
 </field>
 </record>
 
-<record id ="test_form_view33" model="ir.ui.view">
-<field name="name">training.form</field>
-<field name="model">training</field>
-<field name="priority" eval="2"/>
-<field name="arch" type="xml">
-   <form>
-      <sheet>
-          <field name="image" widget="image" class="oe_avatar"/>
-          <widget name="web_ribbon" text="Male" bg_color="bg-danger" attrs="{'invisible': [('gender', '=', 'female')]}"/>
-          <widget name="web_ribbon" text="Female" bg_color="bg-danger" attrs="{'invisible': [('gender', '=','male')]}"/>
 
-          <div class="oe_title">
-             <h1>
-                <field name="name"/>
-             </h1>
-          </div>
-          <group>
-            <group>
-               <field name="gender"/>
-            </group>
-            <group>
-               <field name="age"/>
-               <field name="date_from"/>
-               <field name="date_to"/>
-            </group>      
-          </group>
-          
-      </sheet>
-      <div>
-         <field name="message_follower_ids" widget="mail_followers"/>
-         <field name="activity_ids" widget="mail_activity"/>
-         <field name="message_ids" widget="mail_thread" option='{"thread_level": 1}'/>
-      </div>
-   </form>
-</field>
-</record>
 
 <record id="training_search_view" model="ir.ui.view">
   <field name = "name">training.search</field>
@@ -125,13 +90,11 @@
       name="T_Module" 
       web_icon="training,static/src/images/tst1.png"
       sequence="1"
-      
       />
 
     <menuitem id="test_training_child"
-      name="second" sequence="2"
-      parent="test_training_root"
-      action="training.action_test_root"
+      name="second" 
+      action="school.school_action"
       />
 
       

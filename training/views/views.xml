@@ -110,7 +110,7 @@
       />
       <menuitem id="test_training_child2"
       name="Sub_School"
-      parent = "test_training_child"
+      parent = "test_training_root"
       action="training.action_test_child"
       />
 

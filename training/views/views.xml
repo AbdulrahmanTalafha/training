@@ -28,7 +28,7 @@
           <div class="oe_title">
              <h1>
                 <field name="name"/>
-                <field name="active" invisible="1"/>
+                
              </h1>
           </div>
           <group>
@@ -36,6 +36,7 @@
                <field name="gender"/>
             </group>
             <group>
+            <field name="active" invisible="1"/>
                <field name="age"/>
                <field name="date_from"/>
                <field name="date_to"/>

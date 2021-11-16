@@ -93,7 +93,8 @@
       />
 
     <menuitem id="test_training_child"
-      name="second" 
+      name="second"
+      parent = "test_training_root"
       action="school.school_action"
       />
 

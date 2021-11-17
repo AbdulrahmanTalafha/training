@@ -14,7 +14,7 @@ class training(models.Model):
         ('other' ,'Other'),
     ], string = "Gender", default = "male")
     image = fields.Binary(string = "image")
-    date_from = fields.Datetime(string="Frome")
+    date_from = fields.Datetime(string="From")
     date_to = fields.Datetime(string="To")
     active = fields.Boolean(string='Active',default=True)
     video_url = fields.Char('Video URL', help="URL of a video for showcasing your student.")
